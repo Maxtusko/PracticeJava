@@ -1,5 +1,6 @@
 package chapter6;
 
+//Adding a comment testing
 public class Rectangle {
     private double length;
     private double width;
