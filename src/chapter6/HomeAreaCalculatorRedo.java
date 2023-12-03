@@ -3,15 +3,15 @@ package chapter6;
 import java.util.Scanner;
 
 public class HomeAreaCalculatorRedo {
-    private Scanner scanner = new Scanner(System.in);
+    private final Scanner scanner = new Scanner(System.in);
 
     public static void main(String args[]){
 
         HomeAreaCalculatorRedo calculator = new HomeAreaCalculatorRedo();
         Rectangle kitchen = calculator.getRoom();
-        Rectangle batchroom = calculator.getRoom();
+        Rectangle bathroom = calculator.getRoom();
 
-        double area = calculator.calculateTotalArea(kitchen, batchroom);
+        double area = calculator.calculateTotalArea(kitchen, bathroom);
 
         System.out.println("The total area is: " + area);
         calculator.scanner.close();
